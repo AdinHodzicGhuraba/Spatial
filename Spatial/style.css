@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root {
+    --fontFamily: 'Raleway', sans-serif;
+    --fontSize: 16px;
+    --accents: #f32853;
+    --hover: #f44066;
+    --white: #fff;
+    --headings: #484848; /* rgb(72, 72, 72) */
+    --text: #666;
+    --gray: #aaaaaa;
+    --transition: .3s ease;
+    --py: 100px 0;
+    --pt: 100px 0 0 0;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+/********************** header i nav ****************************************/
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(72, 72, 72,.8),rgba(72, 72, 72,.8)), url("img/banner.jpg");   
+    background-position: center top; 
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white);
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: 70px 90px;
+}
+
+li{
+    padding-left: 80px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+a:hover{
+    color: var(--hover);
+    transition: var(--transition);
+}
+
+.logo{
+    margin: 70px 90px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.logo:hover{
+    color: var(--accents);
+}
+
+span{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+
+.center{
+    width: 60%;
+    display: flex;
+    flex-direction: column ;
+}
+
+.center h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.center h5{
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--gray);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.center button{
+    padding: 25px 50px;
+    margin: 0 340px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accents);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.center button:hover{
+    background: var(--hover);
+    transition: var(--transition);
+}
+
+/************************************** section 1 *****************************************************************/
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fontFamily);
+}
+
+main{
+    width: 60%;
+    height: auto;
+    display: flex;
+}
+
+article{
+    width: 50%;
+    padding: 100px 0;
+    font-size: 2.3rem;
+    line-height: 70px;
+    letter-spacing: 3px;
+    font-family: var(--fontFamily);
+    margin: 35px;
+    color: var(--headings);
+    
+}
+
+article h1{
+    text-transform: uppercase;
+}
+
+article h4{
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 100;
+    line-height: 60px;
+    font-family: var(--fontFamily);
+    text-transform: uppercase;
+}
+
+article div p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 30px;
+    font-family: var(--fontFamily);
+    letter-spacing: normal;
+    padding-left: 15px;
+}
+
+/*************************** fucus *****************************************/
+
+
+img{
+    width: 100%;
+    height: 80%;
+}
+.fusce{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(240, 238, 238);
+    
+
+}
+.header{
+    width: 60%;   
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.header h3{
+    font-size: 2.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--headings);
+    opacity: 50%;
+    margin-top: 50px;
+}
+
+.bossimg{
+    width: 80%;
+}
+
+.img{
+    display: flex;
+    padding: 0 40px;
+}
+
+.article{
+    text-transform: uppercase;
+    letter-spacing: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    background: var(--white);
+    margin-top: -22px;   
+    padding: 15px;
+}
+
+.button{
+    display: flex;
+}
+
+.button button{
+    padding: 25px 70px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accents);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+
+.button .gray_btn{
+    background: var(--text);
+}
+
+.button button:hover{
+    background: var(--hover);
+    transition: var(--transition);
+}
+
+
+/***************** O section ************************/
+
+
+
+.cir{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.cir hgroup{
+    width: 70%;
+    height: auto;
+    margin-top: 80px;
+    margin-left:15%;
+    
+}
+
+.cir hgroup h2{
+    font-size: 2.5rem;
+}
+
+.cir hgroup h4{
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+.cir_entiti{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.ent{
+    
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex: 0 0 70%;
+    flex-direction: column;
+    text-align: right;
+    padding: 35px;
+}
+
+.text h4 h6{
+    text-align: right;
+    width: 100%;
+    
+}
+
+.text h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--headings);
+    margin-bottom: -35px;
+}
+
+.text h6{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.text p{
+    width: 100%;
+    height: 100%;
+}
+main .ent img{
+    width: 22%;
+    border-radius: 50%;
+    border: 8px solid var(--gray);
+}
+
+main .ent img:hover{
+
+    border:4px solid var(--hover);
+    transition: var(--transition);
+}
+
+
+
+.text2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex: 0 0 70%;
+    flex-direction: column;
+    text-align: left;
+    padding: 35px;
+}
+
+.text2 p{
+    padding-left: 0;
+}
+
+.text2 h4 h6{
+    text-align: left;
+    width: 100%;
+    
+}
+
+.text2 h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--headings);
+    margin-bottom: -35px;
+}
+
+.text2 h6{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/************************** endimg********************************************/
+
+.endimg{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(72, 72, 72,.8),rgba(72, 72, 72,.8)), url("img/banner.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+.endimg h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.endimg h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.endimg button{
+    padding: 25px 70px;
+    margin: 50px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accents);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    
+}
+
+.button .gray_btn{
+    background: var(--text);
+}
+
+.endimg button:hover{
+    background: var(--hover);
+    transition: var(--transition);
+}
+
+/*************************************** footer ************************************************/
+
+footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    font-size: 3rem;
+    color: var(--gray);
+    margin-top: 60px;
+    
+}
+
+.icons i{
+    margin: 0 40px;
+}
+
+.icons i:hover{
+    color: var(--headings);
+    transition: var(--transition);
+}
+
+.copy{
+    display: flex;
+}
+
+.copy p{
+    border-right: 1px solid var(--gray);
+    margin: 60px 20px;
+    padding-right: 40px;
+}
+
+.copy .no {
+    border-right:none;
+}
